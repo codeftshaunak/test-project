@@ -53,19 +53,19 @@ const Table = () => {
     };
 
     return (
-        <div className="text-center">
-            <table className="table-auto w-full border-collapse border border-gray-800">
+        <div className="text-center bg-color pl-5 pr-5 pb-5">
+            <table className="table-auto w-full border-collapse border-bottom">
                 <thead>
-                    <tr className="bg-gray-800 text-white">
-                        <th className="py-2 px-4">Name</th>
+                    <tr className="bg-color text-color">
+                        <th className="py-5 px-4">Name</th>
                         <th className="py-2 px-4">Age</th>
                         <th className="py-2 px-4">Hobbies</th>
                     </tr>
                 </thead>
                 <tbody>
                     {users.map((user, index) => (
-                        <tr key={index} className="border border-gray-800">
-                            <td className="py-2 px-4">{user.name}</td>
+                        <tr key={index} className="border-bottom text-color bg-white">
+                            <td className="py-5 px-4">{user.name}</td>
                             <td className="py-2 px-4">{user.age}</td>
                             <td className="py-2 px-4">{user.hobbies.join(', ')}</td>
                         </tr>
